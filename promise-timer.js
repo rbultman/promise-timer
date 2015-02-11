@@ -12,6 +12,7 @@ function myTimer(callback, timeout, v) {
 }
 
 function myTimer1(v) {
+   console.log("Starting timer 1.");
    v.push("Timer 1 complete.");
    return myTimer(function() {
       console.log("Timer 1 complete.");
@@ -19,6 +20,7 @@ function myTimer1(v) {
 }
 
 function myTimer2(v) {
+   console.log("Starting timer 2.");
    v.push("Timer 2 complete.");
    return myTimer(function() {
       console.log("Timer 2 complete.");
@@ -32,7 +34,11 @@ function printResults(v) {
    }
 }
 
+console.log("Starting the first timer.");
+
 myTimer1([])
    .then(myTimer2)
    .done(printResults);
+
+console.log("You have reached the end of the script.");
 
