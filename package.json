@@ -1,0 +1,21 @@
+{
+  "name": "promise-timer",
+  "version": "0.0.1",
+  "description": "This is a program to showing the use of promises and async chaining using timers.",
+  "main": "promise-timer.js",
+  "keywords": [
+    "promise",
+    "timer",
+    "async",
+    "chaining"
+  ],
+  "dependencies": {
+    "promise": "*"
+  },
+  "author": "Rob Bultman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rbultman/promise-timer/issues"
+  },
+  "homepage": "https://github.com/rbultman/promise-timer"
+}
