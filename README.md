@@ -26,7 +26,7 @@ passed to console.log.
 
 Since you can't include parameters along with the function name as a parameter to then(),
 the function that is called needs to be self-contained or only depend on what is passed
-to it when the preceding promise resolved.  This at first seemed limiting to me but then
+to it when the preceding promise resolves.  This at first seemed limiting to me but then
 I realized it enforces discipline and allows each "work package" to be independently tested.
 It also mimics the Linux/Unix method of piping several commands together with the output
 of one being fed to the next promise.
